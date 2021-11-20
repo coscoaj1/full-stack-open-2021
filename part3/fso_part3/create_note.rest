@@ -1,0 +1,13 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+        "content": "must cry all night",
+        "important": true,
+        "userId": "61163eb37fd841311cb0cbce"
+        
+}
+
+
+##
+

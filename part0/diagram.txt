@@ -1,0 +1,27 @@
+title Untitled
+
+note over browser:
+When the button on the form is clicked, browser will send the user input to server.
+end note
+Browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+server-->browser: HTTP status code 302
+Browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML code
+Browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: HTML code
+Browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: HTML code
+
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server 
+end note
+
+Browser->server: https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: (response content)
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note
