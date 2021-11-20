@@ -1,0 +1,13 @@
+title Untitled
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server->browser: html code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server->browser: main.js
+
+note over browser:
+browser starts executing js-code
+that manipulates the contents of the html page fetched from the server 
+end note

@@ -1,0 +1,8 @@
+title spa new note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server->browser: HTTP code 201 created
+
+note over browser:
+browser stays on same page and sends no furthur HTTP requests
+end note
